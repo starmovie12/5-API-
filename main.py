@@ -10,8 +10,8 @@ SITES_TO_PING = [
     "https://hdhub4u-b1mi.onrender.com",
     "https://time-page-bay-pass.onrender.com",
     "https://hdhub4umoviepageurl.onrender.com",
-    "https://hblinks-dad.onrender.com"
-    # Jab Render par is app ka URL milega, use yahan niche add kar dena
+    "https://hblinks-dad.onrender.com",
+    "https://five-api-mzpp.onrender.com"  # ✅ Naya URL Add Kar Diya
 ]
 
 def keep_alive_worker():
@@ -34,7 +34,7 @@ threading.Thread(target=keep_alive_worker, daemon=True).start()
 
 @app.route('/')
 def home():
-    return "I am Alive and pinging your APIs every 2 minutes! 🚀"
+    return "I am Alive and pinging your 5 APIs every 2 minutes! 🚀"
 
 if __name__ == "__main__":
     # Render port environment variable se uthata hai, default 10000
